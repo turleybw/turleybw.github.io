@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BT-turleybw.github.io Menu</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+
+  @charset "UTF-8";
+
+  @font-face {
+    font-family: "menu-symbol";
+    src:url("http://localhost:8888/turleybw.github.io/fonts/menu-symbol.eot");
+    src:url("http://localhost:8888/turleybw.github.io/fonts/menu-symbol.eot?#iefix") format("embedded-opentype"),
+    url("http://localhost:8888/turleybw.github.io//fonts/menu-symbol.woff") format("woff"),
+    url("http://localhost:8888/turleybw.github.io//fonts/menu-symbol.ttf") format("truetype"),
+    url("http://localhost:8888/turleybw.github.io//fonts/menu-symbol.svg#menu-symbol") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+
+  #button { position: absolute; 
+    right:0; 
+    top:0; 
+    height: 100%;
+    width: 20px;
+    padding: 20px;
+    /*background: red;*/
+  }
+
+  .menu-symbol:before {
+    font-family: "menu-symbol" !important;
+    content: "a";
+    font-size: 17px;
+    color:#000;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .menu-bar{
+   position: absolute;
+   width: 160px;
+   height: 100%;
+   background-color:rgba(0, 0, 0, 0)
+   opacity: 0.5;
+   overflow: hidden;
+   padding: 20px;
+ }
+ .menu-bar:hover{
+  background-color:rgba(0, 0, 0, 0.5);
+  color:#fff;
+}
+.slide-closed{
+  left: -140px;
+}
+.slide-open {
+  left: 0px;
+  background-color:rgba(0, 0, 0, 0.5)
+}
+.menu-bar:hover .menu-symbol:before{
+  color: #fff;
+}
+.slide-open .menu-symbol:before {
+  color:#fff;
+  border: none;
+}
+.menu-ul{
+  list-style-type: none;
+  color: #fff;
+}
+.heading{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+#menu-container {
+font-family: 'Inconsolata';
+font-weight: 100;
+letter-spacing: .05em;
+font-size: 10.5pt;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+}
+#menu-container a{
+  color: #fff;
+}
+</style>
+<!--   <link rel="stylesheet" type="text/css" href="./css/bt-menu.css"> -->
+</head>
+<body>
+  <div id="menu-container">
+    <div id="menu" class="menu-bar slide-closed">
+     <div id="button">
+      <a class="menu-symbol" href="#"></a>
+    </div>
+    <ul class="menu-ul">
+      <li class="heading"><a href="http://localhost:8888/turleybw.github.io/">Projects</a></li>
+      <li><a href="http://localhost:8888/turleybw.github.io/projects/1">Processing background</a></li>
+    </ul>
+
+  </div><!-- menu -->
+</div><!-- menu-container-->
+<script>
+
+$(function() {
+	$( "#button" ).click(function() {
+		$( "#menu" ).toggleClass( "slide-open", 300, "easeOutSine");
+	});
+});
+</script>
+
+</body>
+</html>

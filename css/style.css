@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+body{background: #00f}
+
+#content{
+	background: #fff;
+	width: 360px;
+	height: auto;
+	margin: 20.5% auto;
+	padding:20px;
+	border:0px solid;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}

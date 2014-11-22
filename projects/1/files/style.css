@@ -1,0 +1,26 @@
+html, body{
+	font-family: 'Abril Fatface', cursive;
+}
+#container {
+	/*background-color: red;*/
+	text-align: center;
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+h1{
+	font-size: 72pt;
+	line-height: 72pt;
+	padding-bottom: 5px;
+}
+.center{
+/*	background-color: blue;*/
+	position: relative;
+	top: 40%; /*50% is on center but 40% looks better.*/
+	transform: translateY(-50%);
+}
