@@ -1,21 +1,137 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Inconsolata";
+    src:url(http://fonts.googleapis.com/css?family=Inconsolata);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+	src:url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+	font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    color:#0000FF;
+    font-family: "Inconsolata";
   }
-body{background: #00f}
 
-#content{
-	background: #fff;
-	width: 360px;
-	height: auto;
-	margin: 20.5% auto;
-	padding:20px;
-	border:0px solid;
-	-webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+body{
+	font-size: 62.5%;  /* equals 10px */
+	padding: 8em;
+}
 
+.top{
+top: 0;
+left:0;
+}
+.right{
+right:0;
+top:0;
+}
+.bottom{
+bottom: 0;
+left:0;
+}
+.left{
+left: 0;
+top:0;
+}
+.top-bottom{
+	background:#0000FF;
+	position: fixed;
+	width: 100%;
+	height:3em;
+	list-style-type: none;
+}
+.left-right{
+	background:#0000FF;
+	position: fixed;
+	width: 3em;
+	height:100%;
+	list-style-type: none;
+}
+
+#logo{
+	font-family: "Open Sans";
+	border: solid .3em #0000FF;
+	padding: .5em;
+	margin-top: 1em;
+}
+a:visited{
+	color:#0000FF;
+}
+h1{
+		font-family: "Open Sans";
+		margin: 1em 0;
+}
+
+h2{
+font-family: "Open Sans";
+font-size: 10vw;
+margin-left: -.08em;
+
+}
+p, li{
+font-size: 1.4em;  /* equals 11px */
+}
+p a{
+    text-decoration: underline;
+}
+
+.flop-left{
+
+}
+.flop-right {
+list-style-type: none;
+/*background: green;*/
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+writing-mode: lr-tb;
+text-align: center;
+top: 47%;
+position: relative;
+}
+#right-container {
+/*background: red;*/
+
+width: 126px;
+height: 200px;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+}
+
+#left-container {
+/*background: red;*/
+
+width: 126px;
+height: 200px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+}
+.flop-left {
+list-style-type: none;
+/*background: green;*/
+-webkit-transform: rotate(270deg);
+-moz-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+writing-mode: lr-tb;
+text-align: center;
+top: 47%;
+position: relative;
+}
+.p-container{
+	/*background: red;*/
+	max-width:45.5em;
 }
