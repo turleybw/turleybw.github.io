@@ -4,7 +4,7 @@ html, body{
 #container {
 	/*background-color: red;*/
 	text-align: center;
-	width: 600px;
+	width: 50%;
 	height: 200px;
 	position: absolute;
 	top:0;
@@ -14,7 +14,7 @@ html, body{
 	margin: auto;
 }
 h1{
-	font-size: 72pt;
+	font-size: 12vw;
 	line-height: 72pt;
 	padding-bottom: 5px;
 }
