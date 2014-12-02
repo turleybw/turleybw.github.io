@@ -18,6 +18,8 @@
     padding: 0;
     color:#0000FF;
     font-family: "Inconsolata";
+    list-style-type: none;
+    text-decoration: none;
   }
 
 body{
@@ -45,13 +47,13 @@ top:0;
 	background:#0000FF;
 	position: fixed;
 	width: 100%;
-	height:3em;
+	height:2em;
 	list-style-type: none;
 }
 .left-right{
 	background:#0000FF;
 	position: fixed;
-	width: 3em;
+	width: 2em;
 	height:100%;
 	list-style-type: none;
 }
@@ -61,6 +63,7 @@ top:0;
 	border: solid .3em #0000FF;
 	padding: .5em;
 	margin-top: 1em;
+	text-decoration: none;
 }
 a:visited{
 	color:#0000FF;
@@ -100,7 +103,7 @@ position: relative;
 #right-container {
 /*background: red;*/
 
-width: 126px;
+width: 106px;
 height: 200px;
 position: absolute;
 top: 0;
@@ -111,8 +114,7 @@ margin: auto;
 
 #left-container {
 /*background: red;*/
-
-width: 126px;
+width: 106px;
 height: 200px;
 position: absolute;
 top: 0;
@@ -134,4 +136,14 @@ position: relative;
 .p-container{
 	/*background: red;*/
 	max-width:45.5em;
+}
+.heading {
+  text-transform: uppercase;
+  margin-top: 2em;
+  /*padding-top: 3px;*/
+  text-decoration: none;
+  list-style-type: none;
+}
+.menu-item{
+	text-decoration: underline;
 }
